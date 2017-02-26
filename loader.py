@@ -62,7 +62,7 @@ def main():
         # If the service errored, hit it again
         if status_code != 200:
             if i <= RETRY_ATTEMPTS:
-                print("An error occured while retrieving the data, retrying (%d)..." % (i+1), file=sys.stderr)
+                print("An error occurred while retrieving the data, retrying (%d)..." % (i+1), file=sys.stderr)
             continue
 
         # If everything went ok, try to load the data
